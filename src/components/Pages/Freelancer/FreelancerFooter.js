@@ -3,7 +3,7 @@ import React from 'react';
 const FreelancerFooter = (props) => {
     return (
         <footer className="footer text-center">
-            <div className="container">
+            <div className="container footer-container">
                 <div className="row">
                     <div className="col-lg-4 mb-5 mb-lg-0">
                         <h4 className="text-uppercase mb-4">Location</h4>
@@ -51,7 +51,8 @@ const FreelancerFooter = (props) => {
                     <div className="col-lg-4">
                         <h4 className="text-uppercase mb-4">About Freelancer</h4>
                         <p className="lead mb-0">
-                            This a recreation of of the Freelancer page by <a href='#'>Start Bootstrap</a>,
+                            This a recreation of of the Freelancer page by&nbsp;
+                            <a href='https://startbootstrap.github.io/startbootstrap-freelancer/'>Start Bootstrap</a>,
                             made using ReactJS
                         </p>
                     </div>
