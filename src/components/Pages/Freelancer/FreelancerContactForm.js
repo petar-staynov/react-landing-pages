@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {forwardRef} from 'react';
 import FreelancerSectionHeading from "./FreelancerSectionHeading";
 
-const FreelancerContactForm = (props) => {
+const FreelancerContactForm = forwardRef((props, ref) => {
     return (
-        <section>
+        <section ref={ref}>
             <FreelancerSectionHeading title='Contact me' type='heading'/>
             <div className="row">
                 <div className="col-lg-8 mx-auto">
@@ -56,6 +56,6 @@ const FreelancerContactForm = (props) => {
             </div>
         </section>
     )
-};
+});
 
 export default FreelancerContactForm;

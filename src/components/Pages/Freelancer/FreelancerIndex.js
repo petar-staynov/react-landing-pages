@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useRef} from 'react';
 import './Freelancer.scss'
 
 import FreelancerNavbar from "./FreelancerNavbar";
@@ -8,12 +8,22 @@ import FreelancerFooter from "./FreelancerFooter";
 import FreelancerContactForm from "./FreelancerContactForm";
 
 const FreelancerIndex = (props) => {
+    const portfolioRef = useRef(null);
+    const contactFormRef = useRef(null);
+    const aboutRef = useRef(null);
+
+    const refs = {
+        portfolioRef: portfolioRef,
+        contactFormRef: contactFormRef,
+        aboutRef: aboutRef
+    };
+
     return (
         <>
-            <FreelancerNavbar/>
+            <FreelancerNavbar refs={refs}/>
             <FreelancerJumbotron/>
-            <FreelancerPortfolio/>
-            <FreelancerContactForm/>
+            <FreelancerPortfolio ref={portfolioRef}/>;
+            <FreelancerContactForm ref={contactFormRef}/>
             <FreelancerFooter/>
         </>
     )
