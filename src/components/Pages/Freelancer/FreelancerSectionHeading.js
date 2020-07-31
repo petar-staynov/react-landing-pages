@@ -13,7 +13,7 @@ const FreelancerSectionHeading = (props) => {
         : 'divider-custom';
 
     return (
-        <div>
+        <>
             <h1 className={headingStyle}>{title}</h1>
             <div className={dividerStyle}>
                 <div className="divider-custom-line"></div>
@@ -28,7 +28,7 @@ const FreelancerSectionHeading = (props) => {
                 </div>
                 <div className="divider-custom-line"></div>
             </div>
-        </div>
+        </>
     )
 };
 
