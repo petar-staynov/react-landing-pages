@@ -4,6 +4,8 @@ import './Freelancer.scss'
 import FreelancerNavbar from "./FreelancerNavbar";
 import FreelancerJumbotron from "./FreelancerJumbotron";
 import FreelancerPortfolio from "./FreelancerPortfolio";
+import FreelancerFooter from "./FreelancerFooter";
+import FreelancerContactForm from "./FreelancerContactForm";
 
 const FreelancerIndex = (props) => {
     return (
@@ -11,6 +13,8 @@ const FreelancerIndex = (props) => {
             <FreelancerNavbar/>
             <FreelancerJumbotron/>
             <FreelancerPortfolio/>
+            <FreelancerContactForm/>
+            <FreelancerFooter/>
         </>
     )
 };
