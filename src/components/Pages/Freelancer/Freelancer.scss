@@ -44,6 +44,8 @@
   a {
     color: #fff;
 
+    cursor: pointer;
+
     &:hover {
       color: #1abc9c;
     }
@@ -226,6 +228,12 @@
 
 /************************************/
 
+//ABOUT
+.about-button{
+  svg{
+    width: 1rem;
+  }
+}
 
 //FOOTER
 footer {

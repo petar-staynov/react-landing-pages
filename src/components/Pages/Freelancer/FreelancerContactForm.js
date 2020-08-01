@@ -3,7 +3,7 @@ import FreelancerSectionHeading from "./FreelancerSectionHeading";
 
 const FreelancerContactForm = forwardRef((props, ref) => {
     return (
-        <section className='container' ref={ref}>
+        <section className='page-section container' ref={ref}>
             <FreelancerSectionHeading title='Contact me' type='heading'/>
             <div className="row">
                 <div className="col-lg-8 mx-auto">

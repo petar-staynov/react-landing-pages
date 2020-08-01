@@ -6,6 +6,7 @@ import FreelancerJumbotron from "./FreelancerJumbotron";
 import FreelancerPortfolio from "./FreelancerPortfolio";
 import FreelancerFooter from "./FreelancerFooter";
 import FreelancerContactForm from "./FreelancerContactForm";
+import FreelancerAbout from "./FreelancerAbout";
 
 const FreelancerIndex = (props) => {
     const portfolioRef = useRef(null);
@@ -23,6 +24,7 @@ const FreelancerIndex = (props) => {
             <FreelancerNavbar refs={refs}/>
             <FreelancerJumbotron/>
             <FreelancerPortfolio ref={portfolioRef}/>;
+            <FreelancerAbout ref={aboutRef}/>
             <FreelancerContactForm ref={contactFormRef}/>
             <FreelancerFooter/>
         </>
